@@ -11,7 +11,7 @@ class AddAppointment extends Component {
     return(
     <div className="card mt-5">
             <div className="card-body">
-                <h2 className="card-title text-center mb-5"><i class="fas fa-clipboard-check"></i> Add New Appointment</h2>
+                <h2 className="card-title text-center mb-4"><i class="fas fa-clipboard-check"></i> Add New Appointment</h2>
                 <form onSubmit={this.createNewAppointment}>
                     <div className="form-group row">
                         <label className="col-sm-4 col-lg-4 col-form-label"><i class="fas fa-paw"></i> Pet Name</label>
@@ -46,7 +46,7 @@ class AddAppointment extends Component {
                     </div>
                     <div className="form-group row justify-content-end">
                         <div className="col-sm-5">
-                            <button type="submit" className="btn btn-success w-100"><i class="fas fa-clipboard-check"></i> Add Appointment</button>
+                            <button type="submit" className="btn btn-primary w-100"><i class="fas fa-clipboard-check"></i> Add Appointment</button>
                         </div>
                     </div>
                 </form>
