@@ -10,6 +10,15 @@ class AddAppointment extends Component {
 
   createNewAppointment = (e) => {
     e.preventDefault();
+
+    //First we create the object.
+    const newAppointment = {
+        pet: this.petNameRef.current.value,
+        owner: this.ownerNameRef.current.value,
+        date: this.dateRef.current.value,
+        time: this.timeRef.current.value,
+        symptoms: this.symptomsRef.current.value
+    }
     
   }
 
