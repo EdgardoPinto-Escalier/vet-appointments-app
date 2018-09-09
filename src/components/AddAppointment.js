@@ -11,7 +11,7 @@ class AddAppointment extends Component {
   createNewAppointment = (e) => {
     e.preventDefault();
 
-    //First we create the object.
+    // First we create the object.
     const newAppointment = {
         pet: this.petNameRef.current.value,
         owner: this.ownerNameRef.current.value,
@@ -19,6 +19,12 @@ class AddAppointment extends Component {
         time: this.timeRef.current.value,
         symptoms: this.symptomsRef.current.value
     }
+
+    // Here we send the object via props
+    this.props.createAppointment(newAppointment);
+
+    // Finally we reset the form
+    e.currentTarget.reset();
     
   }
 

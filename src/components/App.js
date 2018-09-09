@@ -5,6 +5,25 @@ import AddAppointment from './AddAppointment';
 
 
 class App extends Component {
+
+  state = {
+    appointments: {}
+  }
+
+  createAppointment = dataAppointment => {
+
+    // Next we get a copy of the state
+    const appointments = {...this.state.citas};
+
+    // Here we add it to the current state
+    appointments[`appointments${Date.now()}`] = dataAppointment;
+
+    // Set to the state
+    this.setState({
+      appointments
+    })
+  }
+
   render() {
     return (
       <div className="container">
@@ -15,7 +34,7 @@ class App extends Component {
         <div className="row">
           <div className="col-md-6">
             <AddAppointment 
-            
+                createAppointment={this.createAppointment}
             />
           </div>
           <div className="col-md-6">
