@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import AddAppointment from './AddAppointment';
+import AppointmentsList from './AppointmentsList';
 
 
 
@@ -38,7 +39,9 @@ class App extends Component {
             />
           </div>
           <div className="col-md-6">
-            2
+              <AppointmentsList
+
+              />
           </div>
         </div>
       </div>
