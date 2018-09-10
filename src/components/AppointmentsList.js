@@ -6,7 +6,7 @@ class AppointmentsList extends Component {
     return ( 
         <div className="card mt-5">
             <div className="card-body">
-                <h2 className="card-title text-center">Manage Appointments Here</h2>
+                <h3 className="card-title text-center">Manage Appointments Here</h3>
             </div>
         </div>
 
