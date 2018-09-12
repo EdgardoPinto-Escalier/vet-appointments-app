@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Appointment from './Appointment';
 
 class AppointmentsList extends Component {
   
@@ -9,7 +10,9 @@ class AppointmentsList extends Component {
                 <h3 className="card-title text-center">Manage Appointments Here</h3>
                 <div className="lista-citas">
                     {Object.keys(this.props.appointments).map(appointment => (
-                        
+                        <Appointment
+                            info={ this.props.appointments[appointment] }
+                        />
                     ))}
                 </div>
             </div>
