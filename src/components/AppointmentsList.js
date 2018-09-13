@@ -11,6 +11,7 @@ class AppointmentsList extends Component {
                 <div className="lista-citas">
                     {Object.keys(this.props.appointments).map(appointment => (
                         <Appointment
+                            key={appointment}
                             info={ this.props.appointments[appointment] }
                         />
                     ))}
