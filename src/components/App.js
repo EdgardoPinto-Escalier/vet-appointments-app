@@ -40,7 +40,7 @@ class App extends Component {
           </div>
           <div className="col-md-6">
               <AppointmentsList
-
+                appointments={this.state.appointments}
               />
           </div>
         </div>
