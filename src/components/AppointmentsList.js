@@ -4,10 +4,13 @@ import Appointment from './Appointment';
 class AppointmentsList extends Component {
   
   render() {
+    const appointments = this.props.appointments;
+    const message = Object.keys(appointments).length === 0 ? 'No Appointments' : 'Manage Appointments Here'
+
     return ( 
         <div className="card mt-5">
             <div className="card-body">
-                <h3 className="card-title text-center">Manage Appointments Here</h3>
+                <h3 className="card-title text-center">{message}</h3>
                 <div className="lista-citas">
                     {Object.keys(this.props.appointments).map(appointment => (
                         <Appointment
