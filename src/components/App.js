@@ -25,6 +25,10 @@ class App extends Component {
     })
   }
 
+  eraseAppointment = id => {
+
+  }
+
   render() {
     return (
       <div className="container">
@@ -41,6 +45,7 @@ class App extends Component {
           <div className="col-md-6">
               <AppointmentsList
                 appointments={this.state.appointments}
+                eraseAppointment={this.eraseAppointment}
               />
           </div>
         </div>

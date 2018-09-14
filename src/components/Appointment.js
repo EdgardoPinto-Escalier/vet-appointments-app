@@ -12,9 +12,9 @@ class Appointment extends Component {
                 <p className="card-text"><span>Date: </span>{date}</p>
                 <p className="card-text"><span>Time: </span>{time}</p>
                 <p className="card-text"><span>Symptoms: </span><br />{symptoms}</p>
-                <button className="btn btn-danger">Erase &times;
-
-                </button>
+                <button 
+                    onClick={ () => this.props.eraseAppointment( this.props.appointmentId ) }
+                className="btn btn-danger">Erase &times; </button>
             </div>
         </div>
     )
