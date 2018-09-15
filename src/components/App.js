@@ -14,7 +14,7 @@ class App extends Component {
   createAppointment = dataAppointment => {
 
     // Next we get a copy of the state
-    const appointments = {...this.state.citas};
+    const appointments = {...this.state.appointments};
 
     // Here we add it to the current state
     appointments[`appointments${Date.now()}`] = dataAppointment;
@@ -26,7 +26,11 @@ class App extends Component {
   }
 
   eraseAppointment = id => {
-
+    const appointments = { ...this.state.appointments }
+    delete appointments[id];
+    this.setState({
+      appointments
+    })
   }
 
   render() {
