@@ -12,11 +12,19 @@ class App extends Component {
   }
 
   componentDidMount() {
-
+    const appointmentsLocalStorage = localStorage.getItem('appointments');
+    if(appointmentsLocalStorage) {
+      this.setState({
+        appointments: JSON.parse(appointmentsLocalStorage)
+      })
+    } 
   }
 
   componentDidUpdate() {
-    
+    localStorage.setItem(
+      'appointments',
+      JSON.stringify(this.state.appointments)
+    )
   }
 
   createAppointment = dataAppointment => {
