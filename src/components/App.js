@@ -11,6 +11,10 @@ class App extends Component {
     appointments: {}
   }
 
+  componentDidMount() {
+    
+  }
+
   createAppointment = dataAppointment => {
 
     // Next we get a copy of the state
