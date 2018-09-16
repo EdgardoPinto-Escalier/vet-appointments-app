@@ -16,21 +16,21 @@ header {
 header h1 {
   color: #666;
 }
-.lista-citas .media {
+.appointmentList .media {
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 3rem;
 }
 
-.lista-citas .media:last-of-type{
+.appointmentList .media:last-of-type{
   border-bottom: 0;
 }
-.lista-citas .media-body p {
+.appointmentList .media-body p {
   margin:0;
 }
-.lista-citas .media-body button {
+.appointmentList .media-body button {
   margin-top: 1rem!important;
 }
-.lista-citas .media-body span {
+.appointmentList .media-body span {
   font-weight: bold;
 }
 .col-form-label {
